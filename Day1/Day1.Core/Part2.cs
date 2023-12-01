@@ -1,7 +1,7 @@
 ﻿
 using System.Text.RegularExpressions;
 
-namespace Day1;
+namespace Day1.Core;
 
 public static class Part2
 {

@@ -1,4 +1,6 @@
 
+using Day1.Core;
+
 using NUnit.Framework;
 
 namespace Day1.Tests;

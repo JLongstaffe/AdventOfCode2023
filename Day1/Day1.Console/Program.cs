@@ -1,5 +1,5 @@
 ﻿
-using Day1;
+using Day1.Core;
 
 Console.WriteLine
     (Part1.SumCalibrationValues(File.ReadAllLines("../input.txt")));
