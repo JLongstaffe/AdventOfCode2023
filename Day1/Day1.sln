@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1.Tests", "Day1.Tests\Day1.Tests.csproj", "{5DB7620D-42F8-42ED-9757-29511F0A6A90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1.Core", "Day1\Day1.Core.csproj", "{9E2D4A96-8F13-4B8E-A8F2-47F567C2DBAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1.Core", "Day1.Core\Day1.Core.csproj", "{9E2D4A96-8F13-4B8E-A8F2-47F567C2DBAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1.Console", "Day1.Console\Day1.Console.csproj", "{E1D4BD44-F13C-4ED9-8539-94C9171C29CB}"
 EndProject

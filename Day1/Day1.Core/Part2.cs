@@ -3,23 +3,12 @@ using System.Text.RegularExpressions;
 
 namespace Day1;
 
-public static class CalibrationValues
+public static class Part2
 {
     public static int SumCalibrationValues(IEnumerable<string> input) =>
         input.Sum(GetCalibrationValue);
 
-    public static int SumRealCalibrationValues(IEnumerable<string> input) =>
-        input.Sum(GetRealCalibrationValue);
-
     static int GetCalibrationValue(string input)
-    {
-        var (first, last) = (input.First(char.IsDigit),
-                             input.Last(char.IsDigit));
-
-        return int.Parse(new string([first, last]));
-    }
-
-    static int GetRealCalibrationValue(string input)
     {
         var digitPattern = @"\d|one|two|three|four|five|six|seven|eight|nine";
 
