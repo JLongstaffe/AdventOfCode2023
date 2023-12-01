@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "name": "Advent of Code",
+    "identity": "AdventOfCode",
+    "shortName": "aoc",
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    },
+    "sourceName": "DayX",
+    "preferNameDirectory": true,
+    "guids": [
+        "5DB7620D-42F8-42ED-9757-29511F0A6A90",
+        "9E2D4A96-8F13-4B8E-A8F2-47F567C2DBAC",
+        "E1D4BD44-F13C-4ED9-8539-94C9171C29CB"
+    ]
+}
