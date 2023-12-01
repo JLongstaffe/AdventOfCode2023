@@ -23,10 +23,11 @@ public static class CalibrationValues
     {
         var digitPattern = @"\d|one|two|three|four|five|six|seven|eight|nine";
 
-        var first = StringToNumber(Regex.Match(input, $"{digitPattern}").Value);
+        var first = StringToNumber(Regex.Match(input, digitPattern).Value);
 
         var last = StringToNumber
-            (Regex.Match(input, $".*({digitPattern})").Groups[1].Value);
+            (Regex.Match(input, digitPattern, RegexOptions.RightToLeft)
+                  .Value);
 
         return int.Parse($"{first}{last}");
     }
