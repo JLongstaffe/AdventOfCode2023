@@ -14,13 +14,19 @@ public static class Part1
     {
         var pattern = @"(?<Blue>\d+)\sblue|(?<Red>\d+)\sred|(?<Green>\d+)\sgreen";
 
-        int ToInt(string s) => int.TryParse(s, out var i) ? i : 0;
+        var matches = Regex.Matches(game, pattern);
 
-        bool IsPossible(Match m) => ToInt(m.Groups["Red"].Value) <= MaxRed
-                                 && ToInt(m.Groups["Blue"].Value) <= MaxBlue
-                                 && ToInt(m.Groups["Green"].Value) <= MaxGreen;
+        static int ToInt(string s) => int.TryParse(s, out var i) ? i : 0;
 
-        return Regex.Matches(game, pattern).All(IsPossible);
+        var reds = matches.Select(m => ToInt(m.Groups["Red"].Value));
+
+        var blues = matches.Select(m => ToInt(m.Groups["Blue"].Value));
+
+        var greens = matches.Select(m => ToInt(m.Groups["Green"].Value));
+
+        return reds.All(x => x <= MaxRed)
+            && greens.All(x => x <= MaxGreen)
+            && blues.All(x => x <= MaxBlue);
     }
 
     private static int GetGameId(string game)
