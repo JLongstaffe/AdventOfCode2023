@@ -1,4 +1,6 @@
 ﻿
 using Day2.Core;
 
-Console.WriteLine("Day2");
+var lines = File.ReadAllLines("../input.txt");
+
+Console.WriteLine(Part1.SumPossibleGames(lines));
